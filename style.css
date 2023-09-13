@@ -1,0 +1,283 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+ background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+ /*background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(30,185,162,1) 35%, rgba(0,212,255,1) 100%); */
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+#header {
+  width: 100%;
+  height: 100vh;
+  background-image: url("images/header.jpg");
+  background-repeat: no-repeat;
+  opacity: 0.9;
+  background-size: cover;
+  background-position: center;
+}
+.container {
+  padding: 10px 10%;
+}
+nav {
+  direction: flex;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+}
+.active {
+  color: rgb(28, 247, 247);
+}
+nav ul li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+nav ul li a:hover::after {
+  width: 100%;
+}
+nav h1 {
+  color: #fff;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+nav h1 span {
+  color: #ff004f;
+}
+.header-text {
+  margin-top: 20%;
+  font-size: 30px;
+}
+.header-text p {
+  font-size: 20px;
+  color: #fff;
+}
+.header-text h3 {
+  font-size: 45px;
+  color: #fff;
+}
+.header-text h1 {
+  font-size: 50px;
+  margin-top: 20px;
+  font-weight: 700;
+}
+.header-text h1 span {
+  color: #ff004f;
+}
+.header-img img{
+  width: 35%;
+  border-radius: 15px;
+
+}
+
+/**  -------------------------  about   ------------------------------- */
+#about {
+  padding: 80px 0px;
+  color: #ffff;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.about-col-1 {
+  flex-basis: 35%;
+}
+.about-col-1 img {
+  width: 100%;
+  border-radius: 15px;
+}
+.about-col-2 {
+  flex-basis: 60%;
+}
+.about-col-2 h1 {
+  color: #ff004f;
+}
+.sub-title {
+  font-size: 50px;
+  font-weight: 600;
+  color: #fff;
+}
+
+/*
+.skills , .education, .achievement{
+  margin-top: 20px;
+}
+ul{
+  list-style-type: disc;
+  padding-left: 20px;
+}
+.sub-header{
+  width: 100%;
+  height: 20vh;
+    background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+
+  background-repeat: no-repeat;
+  opacity: 0.7;
+  background-size: cover;
+  background-position: center;
+
+
+}
+.sub-header h2{
+  text-align: center;
+  color: rgb(11, 148, 148);
+  margin-top: 10px;
+  font-size: 60px;
+  font-weight: 600;
+}*/
+
+.about-head h1{
+  color: #ff004f;
+  font-weight: bold;
+
+}
+.about-col h3{
+  color: #fff;
+}
+.about-col h6{
+  color: rgb(111, 250, 250);
+
+  
+}
+.skills-list li{
+  list-style-type: none;
+  color: rgb(111, 250, 250);
+
+}
+
+
+
+/***********************Projects****************************************/
+#project {
+  color: #ffff;
+}
+.project h1 {
+  color: #ff004f;
+}
+.sub-title  {
+  font-size: 50px;
+  font-weight: 600;
+  color: #fff;
+}
+
+#project-list li{
+  list-style-type: disc;
+  color: #fff;
+  text-align: left;
+
+}
+
+
+
+
+/************************Contact**************************************/
+.contact-left {
+  flex-basis: 35%;
+}
+.contact-right {
+  flex-basis: 60%;
+}
+.contact-left h1 {
+  font-size: 50px;
+  color: #ff004f;
+  font-weight: bold;
+}
+
+.contact-left p {
+  margin-top: 30px;
+  color: white;
+}
+.social-icons {
+  margin-top: 30px;
+}
+.social-icons a {
+  text-decoration: none;
+  font-style: 30px;
+  margin-right: 15px;
+  color: white;
+  display: inline-block;
+  transition: transform 0.5s;
+}
+.social-icons a:hover {
+  color: #ff004f;
+  transform: translateY(-7px);
+}
+.btn.btn2 {
+  display: inline-block;
+  background-color: #ff004f;
+  margin-top: 10px;
+  color: #ffff;
+}
+.btn.btn2:hover {
+  color: rgb(8, 153, 153);
+}
+.btn.btn2.cbtn {
+  display: inline-block;
+  background-color:  rgb(8, 99, 99);
+  margin-top: 10px;
+  color: #ff004f;
+
+}
+.btn.btn2.cbtn:hover {
+    color: #fff;
+}
+
+.contact-right form {
+  width: 100%;
+}
+form input,
+form textarea {
+  width: 100%;
+  border: 0;
+  outline: none;
+  background-color: rgb(40, 28, 150);
+  padding: 15px;
+  margin: 15px 0;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 6px;
+}
+form btn2 {
+  padding: 14px 60px;
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.copyright {
+  width: 100%;
+  text-align: center;
+  padding: 25px 0;
+  background-color: #262626;
+  font-weight: 300;
+  margin-top: 20px;
+}
+.copyright p {
+  color: white;
+}
+.copyright i {
+  color: #ff004f;
+}
