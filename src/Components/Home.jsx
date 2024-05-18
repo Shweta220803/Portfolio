@@ -1,5 +1,5 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 import heroImage from '../images/banner1.jpeg'; 
 import Contact from './Contact';
 import Projects from './Projects';
@@ -9,7 +9,8 @@ import About from './About';
 
 const Home = () => {
   return (
-    <div className="container-fluid mt-5">
+  <>
+      <div className="container-fluid mt-5">
     <img src={heroImage} className='hero-img' alt="Your Name" />
    <div className='hero-content'>
     <h1 className='hero-title'>Welcome to my Portfolio</h1>
@@ -18,18 +19,19 @@ const Home = () => {
       
         <p className='home-para'>React Developer and also  working on MERN Stack. Programming Language Java, C++, C.<br/> Knowledge of Github and Git Version Control.</p>
         <br></br>
-              <button className='btn btn-primary btn2'>Download Resume</button>
-              <button className='btn btn-primary btn2'>Hire Me Now!</button>
+              <button className='btn btn-primary home-btn1'>Download Resume</button>
+              <button className='btn btn-primary home-btn2'>Hire Me Now!</button>
 
 
 
     </div>
+</div>
     <About />
       <Projects />
       <Skills />
       <Contact />
 
-    </div>
+    </>
   );
 };
 

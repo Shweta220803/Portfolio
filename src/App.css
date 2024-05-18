@@ -23,6 +23,12 @@ body{
   color: #fff;
   font-style: italic;
 }
+.nav-items a{
+  text-decoration: none;
+  padding: 8px;
+
+}
+
 .nav-active{
   color: rgb(242, 9, 48);
 }
@@ -61,7 +67,7 @@ body{
 .sec-heading{
   color: var(--textColor);
   font-size: var(--fontSize);
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   font-weight: bold;
   align-items: center;
 
@@ -109,77 +115,66 @@ body{
   font-weight: bold;
   font-style: italic;
 }
-.home-para{
-  color: #fff;
-}
+.home-btn2{
+  margin: 15px;
+  background-color: rgb(244, 14, 60);
 
-.btn2{
-  margin-left: 10px;
-  transform: translateY(2s);
-}
-.fa-brands{
-  color: rgb(11, 180, 192);
-  font-size: 25px;
-  padding: 10px;
-}
 
+}
 
 /* about section */
 .about-img{
+  margin-top: 10px;
   width: 70%;
   height: auto;
   border-radius: 5px;
 }
 .about-title{
-  margin-top: 100px;
-  color: rgb(10, 182, 205);
-  font-style: italic;
-  font-size: 35px;
+  margin-top: 10px;
+  color: rgb(242, 9, 48);
+  font-size: 25px;
   font-weight: bold;
+}
+
+.about-p{
+  font-size: 17px;
+}
+.fa-linkedin{
+  font-size: 25px;
+  color: darkgray;
+
+}
+.fa-github{
+  font-size: 25px;
+  color: darkgray;
   margin-left: 10px;
 }
-
-.about-section {
-  display: flex;
+.fa-linkedin:hover, .fa-github:hover{
+  background-color: crimson;
+  transform: translateY(-10px);
+}
+.btn-about{
+  width: 100px;
+  background-color: rgb(3, 75, 75);
+}
+.btn-about:hover{
+  background-color: crimson;
 }
 
-.image-container {
-  flex: 1;
-  margin-right: 20px; 
-  width: 300;
-  height: auto;
-}
+/* project-section */
+.card-title{
+  color: rgb(242, 9, 48);
+  font-size: 22px;
+  text-align: center;
 
-.text-container {
-  flex: 2;
 }
-
-.text-container h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
+.card-text{
+  font-size: 15px;
+  color:grey;
 }
-
-.text-container p {
-  margin-bottom: 10px;
-}
-
-.text-container ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.text-container a {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s;
-}
-
-.text-container a:hover {
-  background-color: #0056b3;
+.btn1, .btn2, .btn3{
+  width: 100px;
+  background-color: rgb(3, 75, 75);
 }
 
 
@@ -216,6 +211,19 @@ body{
 .cont-p{
   font-size: 14px;
 }
+.sub-btn1{
+  margin-left: 10px;
+  width: 30%;
+  height: 35px;
+  margin-bottom: 50px;
+
+}
+.sub-btn1:hover{
+  background-color: crimson;
+  transform: translateY(-10px);
+  transition-duration: 5s;
+}
+
 
 /* Footer section */
 .footer-title{
@@ -249,18 +257,10 @@ input[type="text"]::placeholder{
   height: 35px;
 
 }
-.sub-btn1{
-  margin-left: 10px;
-  width: 30%;
-  height: 35px;
-  margin-bottom: 50px;
+.sub-btn:hover{
+  background-color: rgb(3, 75, 75);
 
-}
-
-.sub-btn:hover, .sub-btn1:hover{
-  background-color: crimson;
-  transform: translateY(-10px);
-  transition-duration: 5s;
+  
 }
 
 .footer-col-3{

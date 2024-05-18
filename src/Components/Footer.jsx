@@ -26,7 +26,6 @@ const Footer = () => {
 
           </div>
           <hr />
-          {/* <p className='footer-p1'>© 2024 Shweta Bharti. All rights reserved.</p> */}
           <div className='row'>
           <p className='footer-p1'>© 2024 Shweta Bharti. All rights reserved.</p>
 

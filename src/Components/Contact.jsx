@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const Contact = () => {
   return (
     <>
-    <div className="container mt-5">
+    <div className="container-fluid mt-5">
       <div className="row">
         <h1 className=' sec-heading text-center'>Contact</h1>
         <div className="col-md-6">
@@ -45,5 +45,7 @@ const Contact = () => {
 }
 
 export default Contact
+
+
 
 
