@@ -1,47 +1,57 @@
 import React from 'react';
-
-const Project = ({ title, description, imageUrl, projectUrl }) => {
-  return (
-    <div className="card">
-      <img src={imageUrl} className="card-img-top" alt={title} />
-      <div className="card-body">
-        <h5 className="card-title">{title}</h5>
-        <p className="card-text">{description}</p>
-        <a href={projectUrl} className="btn btn-primary">View Project</a>
-      </div>
-    </div>
-  );
-};
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Projects = () => {
-  // Example project details
-  const projects = [
-    {
-      title: "Project 1",
-      description: "Description of project 1",
-      imageUrl: "/images/project1.jpg",
-      projectUrl: "https://example.com/project1"
-    },
-    {
-      title: "Project 2",
-      description: "Description of project 2",
-      imageUrl: "/images/project2.jpg",
-      projectUrl: "https://example.com/project2"
-    },
-    // Add more projects as needed
-  ];
-
   return (
-    <section id="projects" className="container">
-      <h2 className='text-white text-center'>Projects</h2>
+    <div className="container mt-5">
       <div className="row">
-        {projects.map((project, index) => (
-          <div className="col-md-4" key={index}>
-            <Project {...project} />
+        {/* Project 1 */}
+        <h1 className='sec-heading text-center'>Projects</h1>
+        <div className="col-md-4 mb-4">
+          <div className="card">
+            <img src="project1-image.jpg" className="card-img-top" alt="Project 1" />
+            <div className="card-body">
+              <h5 className="card-title">Project 1</h5>
+              <p className="card-text">Project 1 details go here.</p>
+            </div>
+            <div className="card-footer">
+              <a href="#" className="btn btn-primary me-2">View</a>
+              <a href="#" className="btn btn-secondary">Source</a>
+            </div>
           </div>
-        ))}
+        </div>
+
+        {/* Project 2 */}
+        <div className="col-md-4 mb-4">
+          <div className="card">
+            <img src="project2-image.jpg" className="card-img-top" alt="Project 2" />
+            <div className="card-body">
+              <h5 className="card-title">Project 2</h5>
+              <p className="card-text">Project 2 details go here.</p>
+            </div>
+            <div className="card-footer">
+              <a href="#" className="btn btn-primary me-2">View</a>
+              <a href="#" className="btn btn-secondary">Source</a>
+            </div>
+          </div>
+        </div>
+
+        {/* Project 3 */}
+        <div className="col-md-4 mb-4">
+          <div className="card">
+            <img src="project3-image.jpg" className="card-img-top" alt="Project 3" />
+            <div className="card-body">
+              <h5 className="card-title">Project 3</h5>
+              <p className="card-text">Project 3 details go here.</p>
+            </div>
+            <div className="card-footer">
+              <a href="#" className="btn btn-primary me-2">View</a>
+              <a href="#" className="btn btn-secondary">Source</a>
+            </div>
+          </div>
+        </div>
       </div>
-    </section>
+    </div>
   );
 };
 
